@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    title MuseArte
+    link(rel="stylesheet", href="/css/styles.css")
+    style.
+      /* Estilos adicionales aquí */
+      body {
+        background-image: url("https://www.descubrirelarte.es/wp-content/uploads/2019/11/Prado-Gallery.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        display: flex; /* Usar flexbox para centrar el contenido */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+        margin: 0; /* Eliminar márgenes por defecto */
+      }
+
+      .contenedor {
+        background-color: rgb(226, 193, 165); /* Color de fondo */
+        padding: 2rem; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        width: 80%; /* Ancho del contenedor (ajusta según sea necesario) */
+        max-width: 800px; /* Ancho máximo del contenedor */
+      }
+
+      header {
+        text-align: center; /* Centrar el texto en el header */
+        color: #000000; /* Color del texto en negro */
+      }
+
+      footer {
+        text-align: center; /* Centrar el texto en el footer */
+        color: #000000; /* Color del texto en negro */
+      }
+
+      .obra {
+        margin: 1rem; /* Espacio entre las obras */
+        text-align: center; /* Centrar el texto dentro de cada obra */
+      }
+
+      .obra img {
+        width: 200px; /* Ancho fijo para todas las imágenes */
+        height: 150px; /* Altura fija para todas las imágenes */
+        object-fit: cover; /* Mantiene la proporción de aspecto y recorta si es necesario */
+      }
+
+      main {
+        display: flex; /* Usar flexbox para centrar el contenido del main */
+        flex-direction: column; /* Alinear en columna */
+        align-items: center; /* Centrar horizontalmente */
+        width: 100%; /* Asegura que el main ocupe todo el ancho */
+      }
+  body
+    .contenedor
+      header
+        h1 MuseArte
+        nav
+          a(href='/') Inicio         
+          a(href='/galeria') Galería     
+          a(href='/acerca') AcercaDe    
+      main
+        block content
+      footer
+        p &copy; 2025 MuseArte

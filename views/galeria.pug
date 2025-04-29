@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h2 Galería de Obras
+  .galeria
+    each obra in obras
+      .obra
+        img(src=obra.imagen, alt=obra.titulo)
+        h3 #{obra.titulo}
+        p por #{obra.autor}
+        a(href=`/obra/${obra.id}`) Ver más
