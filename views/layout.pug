@@ -3,63 +3,97 @@ html
   head
     title MuseArte
     link(rel="stylesheet", href="/css/styles.css")
+    // Enlace a Google Fonts para la fuente Poppins
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap", rel="stylesheet")
     style.
-      /* Estilos adicionales aquí */
       body {
         background-image: url("https://www.descubrirelarte.es/wp-content/uploads/2019/11/Prado-Gallery.jpg");
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        display: flex; /* Usar flexbox para centrar el contenido */
-        justify-content: center; /* Centrar horizontalmente */
-        align-items: center; /* Centrar verticalmente */
-        min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-        margin: 0; /* Eliminar márgenes por defecto */
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Poppins', sans-serif; /* Aplicamos la fuente Poppins */
       }
 
       .contenedor {
-        background-color: rgb(226, 193, 165); /* Color de fondo */
-        padding: 2rem; /* Espaciado interno */
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-        width: 80%; /* Ancho del contenedor (ajusta según sea necesario) */
-        max-width: 800px; /* Ancho máximo del contenedor */
+        background-color: rgb(226, 193, 165);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 800px;
       }
 
       header {
-        text-align: center; /* Centrar el texto en el header */
-        color: #000000; /* Color del texto en negro */
+        text-align: center;
+        color: #000000;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #000;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      nav a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        color: #000;
+        text-decoration: none;
+        margin: 0 1.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #495057;
+        transform: scale(1.05);
       }
 
       footer {
-        text-align: center; /* Centrar el texto en el footer */
-        color: #000000; /* Color del texto en negro */
+        text-align: center;
+        color: #000000;
+        margin-top: 2rem;
+      }
+
+      footer p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
       }
 
       .obra {
-        margin: 1rem; /* Espacio entre las obras */
-        text-align: center; /* Centrar el texto dentro de cada obra */
+        margin: 1rem;
+        text-align: center;
       }
 
       .obra img {
-        width: 200px; /* Ancho fijo para todas las imágenes */
-        height: 150px; /* Altura fija para todas las imágenes */
-        object-fit: cover; /* Mantiene la proporción de aspecto y recorta si es necesario */
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
       }
 
       main {
-        display: flex; /* Usar flexbox para centrar el contenido del main */
-        flex-direction: column; /* Alinear en columna */
-        align-items: center; /* Centrar horizontalmente */
-        width: 100%; /* Asegura que el main ocupe todo el ancho */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
       }
   body
     .contenedor
       header
         h1 MuseArte
         nav
-          a(href='/') Inicio         
-          a(href='/galeria') Galería     
-          a(href='/acerca') AcercaDe    
+          a(href='/') Inicio
+          a(href='/galeria') Galería
+          a(href='/acerca') AcercaDe
       main
         block content
       footer

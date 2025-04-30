@@ -5,15 +5,14 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif; /* Cambia 'Arial' por 'Poppins' o la fuente que elijas */
   background-color: #f52202;
   color: #333;
   line-height: 1.6;
 }
 
-/* HEADER */
 header {
-  background-color: #343a40; /* Color más suave */
+  background-color: #343a40; 
   color: #fff;
   text-align: center;
   padding: 2rem 0;
@@ -41,11 +40,10 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #495057; /* Color más claro */
+  background-color: #495057;
   transform: scale(1.05);
 }
 
-/* MAIN CONTENT */
 main {
   padding: 2rem;
 }
@@ -55,7 +53,7 @@ h2 {
   color: #ffffff;
   text-align: center;
   margin-bottom: 2rem;
-  text-transform: uppercase; /* Texto en mayúsculas */
+  text-transform: uppercase;
 }
 
 p {
@@ -66,22 +64,21 @@ p {
   color: #ffffff;
 }
 
-/* GALERIA */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta el tamaño de los cuadros */
-  gap: 2rem; /* Espacio entre los cuadros */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 .obra {
-  background-color: #fff; /* Fondo blanco para los cuadros */
+  background-color: #fff; 
   padding: 1rem;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  border: 2px solid #f52202; /* Borde color rojo */
+  border: 2px solid #f52202; 
 }
 
 .obra:hover {
@@ -90,10 +87,10 @@ p {
 }
 
 .obra img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del cuadro */
-  height: 150px; /* Altura fija para todas las imágenes */
-  object-fit: cover; /* Mantiene la proporción de aspecto y recorta si es necesario */
-  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 8px; 
 }
 
 .obra h3 {
@@ -124,7 +121,6 @@ p {
   transform: scale(1.05);
 }
 
-/* OBRA INDIVIDUAL */
 .obra-detalle {
   display: flex;
   justify-content: center;
@@ -151,9 +147,8 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* FOOTER */
 footer {
-  background-color: #343a40; /* Color más suave */
+  background-color: #343a40; 
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -164,20 +159,15 @@ footer p {
   font-size: 1rem;
 }
 
-/* Estilos adicionales para enlaces y textos */
-h2 {
-  color: #ffffff; /* Cambia el color del texto del h2 a blanco */
-}
-
-p {
-  color: #ffffff; /* Cambia el color del texto del párrafo a blanco */
+h2, p {
+  color: #ffffff;
 }
 
 a {
-  color: #ffffff; /* Cambia el color del texto del enlace a blanco */
-  text-decoration: underline; /* Opcional: subrayar el enlace */
+  color: #ffffff; 
+  text-decoration: underline; 
 }
 
 a:hover {
-  color: #f52202; /* Cambia el color del enlace al pasar el mouse (opcional) */
+  color: #f52202; 
 }
